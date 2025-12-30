@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground | Gabriel Tsen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="navbar">
+        <nav>
+            <a href="index.html" class="logo">GABRIEL</a>
+            <div class="nav-links">
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="projects.html">Projects</a>
+                <a href="blog.html">Blog</a>
+                <a href="playground.html" class="active-link">Playground</a>
+            </div>
+            <a href="about.html#contact" class="btn btn-sm btn-primary">Contact Me</a>
+        </nav>
+    </header>
+
+    <!-- Theme Switcher Moved to Footer -->
+
+    <section style="padding-top: 150px;">
+        <div class="container">
+            <h1 class="section-title reveal">My Playground</h1>
+            <p class="section-desc reveal">Interactive experiments and cool tools.</p>
+
+            <div class="features-grid">
+                <!-- Feature 1: Tic Tac Toe -->
+                <div class="card ttt-card reveal delay-1">
+                    <h3>Tic Tac Toe (vs AI)</h3>
+                    <p>Can you beat the Extreme AI?</p>
+
+                    <div class="ttt-stats">
+                        <div class="ttt-stat-item">
+                            <div id="stat-played" class="ttt-stat-number">0</div>
+                            <div class="ttt-stat-label">Played</div>
+                        </div>
+                        <div class="ttt-stat-item">
+                            <div id="stat-won" class="ttt-stat-number">0</div>
+                            <div class="ttt-stat-label">Won</div>
+                        </div>
+                        <div class="ttt-stat-item">
+                            <div id="stat-lost" class="ttt-stat-number">0</div>
+                            <div class="ttt-stat-label">Lost</div>
+                        </div>
+                        <div class="ttt-stat-item">
+                            <div id="stat-wr" class="ttt-stat-number">0%</div>
+                            <div class="ttt-stat-label">Win Rate</div>
+                        </div>
+                    </div>
+
+                    <div id="ttt-board" class="ttt-grid">
+                        <div class="ttt-cell" data-index="0"></div>
+                        <div class="ttt-cell" data-index="1"></div>
+                        <div class="ttt-cell" data-index="2"></div>
+                        <div class="ttt-cell" data-index="3"></div>
+                        <div class="ttt-cell" data-index="4"></div>
+                        <div class="ttt-cell" data-index="5"></div>
+                        <div class="ttt-cell" data-index="6"></div>
+                        <div class="ttt-cell" data-index="7"></div>
+                        <div class="ttt-cell" data-index="8"></div>
+                    </div>
+
+                    <div class="ttt-controls">
+                        <div id="ttt-status">Your Turn (X)</div>
+                        <select id="difficulty-select">
+                            <option value="easy">Easy (Random)</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                            <option value="extreme">Extreme (Unbeatable)</option>
+                        </select>
+                        <button id="ttt-reset" class="btn btn-sm btn-outline">Reset Game</button>
+                    </div>
+                </div>
+
+                <!-- Feature 2: BMI Calculator -->
+                <div class="card bmi-card reveal delay-2">
+                    <h3>BMI Calculator</h3>
+                    <p>Interactive health check</p>
+
+                    <div class="bmi-content-wrapper">
+                        <div class="bmi-controls">
+                            <div class="control-group">
+                                <label>Height: <span id="height-val">170</span> cm</label>
+                                <input type="range" id="height" min="100" max="220" value="170">
+                            </div>
+                            <div class="control-group">
+                                <label>Weight: <span id="weight-val">70</span> kg</label>
+                                <input type="range" id="weight" min="30" max="150" value="70">
+                            </div>
+                        </div>
+
+                        <div class="bmi-result">
+                            <div class="bmi-header" style="text-align: center;">
+                                <div id="bmi-display" class="bmi-value">24.2</div>
+                                <div id="bmi-category" class="bmi-category">Normal Weight</div>
+                            </div>
+
+                            <div class="bmi-visuals">
+                                <div class="bmi-image-container">
+                                    <img id="bmi-image" src="images/bmi_normal.png" alt="BMI Visual">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Canvas -->
+                <div class="card feature-card reveal delay-3">
+                    <h3>Interactive Canvas</h3>
+                    <p>Move your mouse to interact with the particles.</p>
+                    <div class="canvas-placeholder">Move Cursor Here</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Gabriel Tsen. All rights reserved.</p>
+            <div class="theme-container">
+                <select id="theme-select" title="Select Theme">
+                    <option value="">☀️ Apple Light (Default)</option>
+                    <option value="dark">🌙 Dark Mode</option>
+                    <option value="game">👾 Game Mode</option>
+                    <option value="christmas">🎄 Christmas</option>
+                    <option value="halloween">🎃 Halloween</option>
+                    <option value="cny">🧧 Lunar New Year</option>
+                </select>
+            </div>
+            <div class="socials">
+                <a href="https://github.com/gabrieltsen" target="_blank">GitHub</a>
+                <span class="separator">|</span>
+                <a href="https://linkedin.com/in/gabrieltsen" target="_blank">LinkedIn</a>
+                <span class="separator">|</span>
+                <a href="mailto:gabrieltsen0831@gmail.com">gabrieltsen0831@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

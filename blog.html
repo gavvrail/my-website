@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Gabriel Tsen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="navbar">
+        <nav>
+            <a href="index.html" class="logo">GABRIEL</a>
+            <div class="nav-links">
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="projects.html">Projects</a>
+                <a href="blog.html" class="active-link">Blog</a>
+                <a href="playground.html">Playground</a>
+            </div>
+            <a href="about.html#contact" class="btn btn-sm btn-primary">Contact Me</a>
+        </nav>
+    </header>
+
+    <!-- Theme Switcher Moved to Footer -->
+
+    <section style="padding-top: 150px;">
+        <div class="container">
+            <h1 class="section-title reveal">Thoughts & Writings</h1>
+            <p class="section-desc reveal delay-1">Sharing my insights on technology, design, and career growth.</p>
+
+            <div class="blog-grid">
+                <!-- Article 1 -->
+                <article class="blog-card reveal delay-1">
+                    <div class="blog-image">💻</div>
+                    <div class="blog-content">
+                        <span class="blog-cat">Development</span>
+                        <h3>Mastering React Animations</h3>
+                        <p>A deep dive into creating smooth, performant animations using CSS and Framer Motion.</p>
+                        <a href="#" style="text-decoration: underline; font-weight: 500;">Read More →</a>
+                    </div>
+                </article>
+                <!-- Article 2 -->
+                <article class="blog-card reveal delay-2">
+                    <div class="blog-image">🎨</div>
+                    <div class="blog-content">
+                        <span class="blog-cat">Design</span>
+                        <h3>The Dark Mode Trend</h3>
+                        <p>Why every website needs a dark mode and how to implement it correctly.</p>
+                        <a href="#" style="text-decoration: underline; font-weight: 500;">Read More →</a>
+                    </div>
+                </article>
+                <!-- Article 3 -->
+                <article class="blog-card reveal delay-3">
+                    <div class="blog-image">🧠</div>
+                    <div class="blog-content">
+                        <span class="blog-cat">Personal</span>
+                        <h3>My Journey into Tech</h3>
+                        <p>From zero coding knowledge to Senior Engineer. Lessons learned along the way.</p>
+                        <a href="#" style="text-decoration: underline; font-weight: 500;">Read More →</a>
+                    </div>
+                </article>
+                <!-- Article 4 -->
+                <article class="blog-card reveal delay-2">
+                    <div class="blog-image">⚡</div>
+                    <div class="blog-content">
+                        <span class="blog-cat">Performance</span>
+                        <h3>Web Vitals Explained</h3>
+                        <p>Understanding LCP, FID, and CLS to rank higher on Google.</p>
+                        <a href="#" style="text-decoration: underline; font-weight: 500;">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Gabriel Tsen. All rights reserved.</p>
+            <div class="theme-container">
+                <select id="theme-select" title="Select Theme">
+                    <option value="">☀️ Apple Light (Default)</option>
+                    <option value="dark">🌙 Dark Mode</option>
+                    <option value="game">👾 Game Mode</option>
+                    <option value="christmas">🎄 Christmas</option>
+                    <option value="halloween">🎃 Halloween</option>
+                    <option value="cny">🧧 Lunar New Year</option>
+                </select>
+            </div>
+            <div class="socials">
+                <a href="https://github.com/gabrieltsen" target="_blank">GitHub</a>
+                <span class="separator">|</span>
+                <a href="https://linkedin.com/in/gabrieltsen" target="_blank">LinkedIn</a>
+                <span class="separator">|</span>
+                <a href="mailto:gabrieltsen0831@gmail.com">gabrieltsen0831@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
